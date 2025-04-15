@@ -1296,7 +1296,7 @@ async function 生成配置信息(userID, hostName, sub, UA, RproxyIP, _url, fak
 
 				return randomIP.join('.');
 			}
-			addresses = addresses.concat('127.0.0.1:1234#CFnat');
+			// addresses = addresses.concat('127.0.0.1:1234#CFnat');
 			let counter = 1;
 			if (hostName.includes("worker") || hostName.includes("notls")) {
 				const randomPorts = httpPorts.concat('80');
@@ -1845,7 +1845,7 @@ function 生成本地订阅(host, UUID, noTLS, newAddressesapi, newAddressescsv,
 		}
 
 		const 协议类型 = atob(啥啥啥_写的这是啥啊);
-		const 维列斯Link = `${协议类型}://${UUID}@${address}:${port + atob('P2VuY3J5cHRpb249bm9uZSZzZWN1cml0eT10bHMmc25pPQ==') + 伪装域名}&fp=random&type=ws&host=${伪装域名}&path=${encodeURIComponent(最终路径)}#${encodeURIComponent(addressid + 节点备注)}`;
+		const 维列斯Link = `${协议类型}://${UUID}@${address}:${port + atob('P2VuY3J5cHRpb249bm9uZSZzZWN1cml0eT10bHMmc25pPQ==') + 伪装域名 + '&' + atob('YWxwbg==') + '=' + atob('aHR0cC8xLjE=')}&fp=random&type=ws&host=${伪装域名}&path=${encodeURIComponent(最终路径)}#${encodeURIComponent(addressid + 节点备注)}`;
 
 		return 维列斯Link;
 	}).join('\n');
